@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Single Page App inside MVC -This is app2";
+}
+@section HeadScripts {
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="/a/app/styles/main.css" />
+    <!-- endbuild -->
+}
+<div data-ng-app="testMvcmono2App">
+	<h2>App1</h2>
+	<div ng-view=""></div>
+</div>
+@section ScriptLibs {
+    @Scripts.Render("~/a/app/bower_components/jquery/dist/jquery.js")
+    @Scripts.Render("~/a/app/bower_components/angular/angular.js")
+    @Scripts.Render("~/a/app/bower_components/json3/lib/json3.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js")
+    @Scripts.Render("~/a/app/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js")
+    @Scripts.Render("~/a/app/bower_components/angular-resource/angular-resource.js")
+    @Scripts.Render("~/a/app/bower_components/angular-cookies/angular-cookies.js")
+    @Scripts.Render("~/a/app/bower_components/angular-sanitize/angular-sanitize.js")
+    @Scripts.Render("~/a/app/bower_components/angular-animate/angular-animate.js")
+    @Scripts.Render("~/a/app/bower_components/angular-touch/angular-touch.js")
+    @Scripts.Render("~/a/app/bower_components/angular-route/angular-route.js")
+}
+@section AppScripts {
+    @Scripts.Render("~/a/app/scripts/app.js")
+    @Scripts.Render("~/a/app/scripts/controllers/main.js")
+    @Scripts.Render("~/a/app/scripts/controllers/about.js")
+}
