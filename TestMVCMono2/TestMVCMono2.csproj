@@ -125,7 +125,6 @@
     <None Include="a\app\.bowerrc" />
     <None Include="Views\App\App2.cshtml" />
     <None Include="Views\App\App1.cshtml" />
-    <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AppController.cs" />
